@@ -1,0 +1,102 @@
+.line-separator {
+    border-color: #b9b9b91c;
+}
+
+.citation-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 64px auto;
+    align-items: center;
+}
+
+.photo-ny>img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    filter: grayscale(1);
+}
+
+.photo-ny>img:hover {
+    filter: grayscale(0);
+}
+
+.citation-details {
+    margin-left: 64px;
+    max-width: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.citation-details>p {
+    margin: 0;
+}
+
+.citation-details>div {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.heart-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid var(--light-text-secondary);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.heart-box>svg {
+    height: 25px;
+}
+
+.dark-mode .heart-box {
+    border: 1px solid var(--dark-text-secondary);
+}
+
+.dark-mode .heart-box svg path {
+    stroke: var(--dark-text-secondary);
+}
+
+.like-numbers {
+    width: 80px;
+    font-size: 17px;
+    display: flex;
+    margin-left: 16px;
+    font-family: "Poppins";
+    font-weight: 500;
+}
+
+.like-numbers>span {
+    margin-left: 8px;
+}
+
+.heart-box.liked svg path {
+    fill: red;
+    stroke: red
+}
+
+.developer-quote {
+    font-weight: 400;
+    font-style: italic;
+}
+
+@media(max-width: 675px) {
+    .citation-wrapper {
+        flex-direction: column;
+    }
+
+    .citation-details {
+        margin-left: 0px;
+    }
+
+    .citation-details>p.developer-quote{
+        margin-top: 16px;
+    }
+}

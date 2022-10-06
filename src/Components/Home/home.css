@@ -1,0 +1,142 @@
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-and-desc {
+    width: 45%;
+    position: relative;
+}
+
+.title-and-desc>h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    font-family: "Poppins";
+}
+
+.title-and-desc>p {
+    font-size: 20px;
+    margin: 40px 0;
+}
+
+.image-home {
+    display: flex;
+}
+
+.image-home>div {
+    width: 220px;
+    height: 480px;
+    border-radius: 16px;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(1);
+    transition: filter 0.2s linear;
+    position: relative;
+}
+
+.image-home>div:hover {
+    filter: grayscale(0);
+}
+
+.image-home>div:nth-child(1) {
+    background-image: url("../../Assets/home-1.jpg");
+}
+
+.image-home>div:nth-child(2) {
+    background-image: url("../../Assets/home-2.jpg");
+    margin: 68px 0 0 20px;
+}
+
+.image-home>div::after {
+    content: url("data:image/svg+xml,%3Csvg id='dots' xmlns='http://www.w3.org/2000/svg' width='152' height='152' viewBox='0 0 152 152'%3E%3Ccircle id='Ellipse_2' data-name='Ellipse 2' cx='4' cy='4' r='4' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-2' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(36)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-3' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(72)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-4' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(108)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-5' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(144)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-6' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(0 36)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-7' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(36 36)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-8' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(72 36)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-9' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(108 36)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-10' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(144 36)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-11' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(0 72)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-12' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(36 72)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-13' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(72 72)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-14' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(108 72)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-15' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(144 72)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-16' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(0 108)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-17' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(36 108)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-18' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(72 108)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-19' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(108 108)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-20' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(144 108)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-21' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(0 144)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-22' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(36 144)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-23' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(72 144)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-24' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(108 144)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-25' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(144 144)' fill='%23535661'/%3E%3C/svg%3E%0A");
+}
+
+.dark-mode .image-home>div::after {
+
+    content: url("data:image/svg+xml,%3Csvg id='dots' xmlns='http://www.w3.org/2000/svg' width='152' height='152' viewBox='0 0 152 152'%3E%3Ccircle id='Ellipse_2' data-name='Ellipse 2' cx='4' cy='4' r='4' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-2' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(36)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-3' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(72)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-4' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(108)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-5' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(144)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-6' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(0 36)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-7' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(36 36)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-8' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(72 36)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-9' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(108 36)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-10' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(144 36)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-11' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(0 72)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-12' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(36 72)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-13' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(72 72)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-14' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(108 72)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-15' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(144 72)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-16' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(0 108)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-17' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(36 108)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-18' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(72 108)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-19' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(108 108)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-20' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(144 108)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-21' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(0 144)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-22' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(36 144)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-23' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(72 144)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-24' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(108 144)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-25' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(144 144)' fill='%23e8e7e7'/%3E%3C/svg%3E%0A");
+}
+
+.first-img::after {
+    position: absolute;
+    bottom: -100px;
+    left: -80px;
+}
+
+.last-img::after {
+    position: absolute;
+    right: -80px;
+    top: -100px;
+}
+
+.big-button>svg {
+    margin-right: 8px;
+    height: 12px;
+}
+
+.dark-mode .big-button>svg path {
+    fill: var(--light-text-primary);
+}
+
+.thick-2 span {
+    background:
+        linear-gradient(#000 0 0) 50% calc(-3px - 100%) /var(--d, 0%) 200% no-repeat;
+    transition: 0.3s, background-size 0.3s 0.3s;
+}
+
+.thick-2:hover span {
+    --d: 100%;
+    background-position: 50% 0%;
+    color: #fff;
+    padding: 0 16px;
+    transition: 0.3s, background-position 0.3s 0.3s, color 0.3s 0.3s, padding 0.3s;
+}
+
+
+.dark-mode .thick-2 span {
+    background:
+        linear-gradient(#FFF 0 0) 50% calc(-3px - 100%) /var(--d, 0%) 200% no-repeat;
+    transition: 0.3s, background-size 0.3s 0.3s;
+}
+
+.dark-mode .thick-2:hover span {
+    color: #000;
+    --d: 100%;
+    background-position: 50% 0%;
+    padding: 0 16px;
+    transition: 0.3s, background-position 0.3s 0.3s, color 0.3s 0.3s, padding 0.3s;
+}
+
+@media(max-width: 1390px) {
+    .image-home>div {
+        width: 150px;
+        height: 320px;
+    }
+}
+
+@media(max-width:1040px) {
+    .image-home {
+        display: none;
+    }
+
+    .title-and-desc {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .title-and-desc::after {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='107' height='107' viewBox='0 0 107 107'%3E%3Ccircle id='Ellipse_2' data-name='Ellipse 2' cx='4' cy='4' r='4' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-2' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(33)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-3' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(66)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-4' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(99)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-5' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(0 33)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-6' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(33 33)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-7' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(66 33)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-8' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(99 33)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-9' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(0 66)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-10' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(33 66)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-11' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(66 66)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-12' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(99 66)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-13' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(0 99)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-14' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(33 99)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-15' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(66 99)' fill='%23535661'/%3E%3Ccircle id='Ellipse_2-16' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(99 99)' fill='%23535661'/%3E%3C/svg%3E%0A");
+        position: absolute;
+        left: -48px;
+        top: -150px;
+    }
+
+    .dark-mode .title-and-desc::after {
+        content: url("data:image/svg+xml,%3Csvg id='Composant_7_1' data-name='Composant 7 – 1' xmlns='http://www.w3.org/2000/svg' width='107' height='107' viewBox='0 0 107 107'%3E%3Ccircle id='Ellipse_2' data-name='Ellipse 2' cx='4' cy='4' r='4' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-2' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(33)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-3' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(66)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-4' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(99)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-5' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(0 33)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-6' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(33 33)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-7' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(66 33)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-8' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(99 33)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-9' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(0 66)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-10' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(33 66)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-11' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(66 66)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-12' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(99 66)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-13' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(0 99)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-14' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(33 99)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-15' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(66 99)' fill='%23e8e7e7'/%3E%3Ccircle id='Ellipse_2-16' data-name='Ellipse 2' cx='4' cy='4' r='4' transform='translate(99 99)' fill='%23e8e7e7'/%3E%3C/svg%3E");
+    }
+}

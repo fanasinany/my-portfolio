@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/iconn.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="A Frontend developer located in Madagascar." />
+  <meta name="title" content="Ny Nivoarijaona" />
+  <meta name="keywords" content="Ny Nivoarijaona, Ny Niv, NyNivoarijaona, NyNiv, Ny" />
+
+  <meta property="og:URL" content="%PUBLIC_URL%" />
+  <meta property="og:type" content="siteweb" />
+  <meta property="og:title" content="Ny Nivoarijaona" />
+  <meta property="og:description" content="A Frontend developer located in Madagascar." />
+  <meta property="og:image" content="%PUBLIC_URL%/thumbnail.jpg" />
+  <meta property="og:keywords" content="Ny Nivoarijaona, Ny Niv, NyNivoarijaona, NyNiv, Ny" />
+
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <style>
+    body>.overlay {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      z-index: 999999999;
+      pointer-events: none;
+      top: 0;
+      left: 0;
+    }
+
+    body>.overlay>div {
+      width: 20%;
+      background-color: #2a2a2a;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    body.dark-mode>.overlay>div {
+      background-color: #ffffff;
+    }
+
+    body>.overlay>div:nth-child(1) {
+      transition: transform 0.7s cubic-bezier(0.86, 0, 0.07, 1) 630ms;
+    }
+
+    body>.overlay>div:nth-child(2) {
+      transition: transform 0.7s cubic-bezier(0.86, 0, 0.07, 1) 560ms;
+    }
+
+    body>.overlay>div:nth-child(3) {
+      transition: transform 0.7s cubic-bezier(0.86, 0, 0.07, 1) 490ms;
+    }
+
+    body>.overlay>div:nth-child(4) {
+      transition: transform 0.7s cubic-bezier(0.86, 0, 0.07, 1) 420ms;
+    }
+
+    body>.overlay>div:nth-child(5) {
+      transition: transform 0.7s cubic-bezier(0.86, 0, 0.07, 1) 350ms;
+    }
+
+    body>.overlay>div:nth-child(6) {
+      transition: transform 0.7s cubic-bezier(0.86, 0, 0.07, 1) 280ms;
+    }
+
+    body>.overlay>div:nth-child(7) {
+      transition: transform 0.7s cubic-bezier(0.86, 0, 0.07, 1) 210ms;
+    }
+
+    body>.overlay.loaded>div {
+      transform: translateY(-100%);
+    }
+  </style>
+  <title>Ny Nivoarijaona</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <div class="overlay">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <script>
+    var overlay = document.querySelector('body>.overlay');
+
+    window.addEventListener('load', function () {
+      overlay.classList.add('loaded');
+    });
+  </script>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+</body>
+
+</html>

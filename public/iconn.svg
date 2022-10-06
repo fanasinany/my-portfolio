@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+    <g id="Groupe_65" data-name="Groupe 65" transform="translate(-671 -739)">
+        <g id="Rectangle_38" data-name="Rectangle 38" transform="translate(671 739)" fill="none" stroke="#66b0db" stroke-width="2" stroke-dasharray="32">
+            <rect width="70" height="70" stroke="none" />
+            <rect x="1" y="1" width="68" height="68" fill="none" />
+        </g>
+        <text id="N" transform="translate(686 792)" fill="#60a8df" font-size="52" font-family="Nexa-Bold, Nexa" font-weight="700">
+            <tspan x="0" y="0">N</tspan>
+        </text>
+    </g>
+</svg>  

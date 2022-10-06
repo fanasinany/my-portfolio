@@ -1,0 +1,112 @@
+.timeline-wrapper {
+    margin: 60px 0;
+}
+
+.vertical-timeline-element-content {
+    box-shadow: none !important;
+}
+
+.date-timeline {
+    color: #101010;
+    font-family: "Poppins";
+    font-size: 20px !important;
+    top: -3px !important;
+}
+
+@media only screen and (min-width: 1170px) {
+    .dark-mode .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
+        color: white;
+    }
+}
+
+.dark-mode .date-timeline {
+    color: var(--light-text-primary);
+}
+
+.icon-timeline {
+    background-color: var(--dark-text-primary);
+    font-family: "Poppins";
+    font-size: 20px;
+    box-shadow: 0 0 0 4px #d1d4df, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #101010;
+}
+
+@media(max-width: 1170px) {
+    .icon-timeline {
+        font-size: 16px;
+    }
+}
+
+.dark-mode .icon-timeline {
+    background-color: #181818;
+    color: var(--dark-text-primary);
+}
+
+.vertical-timeline-element-title {
+    margin: 0 !important;
+    color: var(--light-text-primary);
+}
+
+.vertical-timeline-element-subtitle {
+    margin: 4px 0 0 0 !important;
+    font-size: 16px !important;
+}
+
+.vertical-timeline-element-description {
+    font-weight: 400 !important;
+}
+
+.list-skills {
+    display: flex;
+    list-style: none;
+    gap: 64px;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.list-skills>li {
+    align-items: center;
+    display: flex;
+}
+
+.list-skills>li>span {
+    margin-left: 12px;
+    font-size: 16px;
+}
+
+.skills-wrapper>div {
+    margin-bottom: 40px;
+}
+
+.skills-wrapper>div:last-of-type {
+    margin-bottom: 0px;
+}
+
+.descrip-skills {
+    margin-bottom: 40px;
+    color: var(--light-text-secondary);
+}
+
+.dark-mode .descrip-skills {
+    color: var(--dark-text-secondary);
+}
+
+.dark-mode .list-skills>li svg path {
+    fill: var(--dark-text-secondary);
+}
+
+@media(max-width:500px) {
+
+    .descrip-skills {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:350px) {
+    .list-skills {
+        gap: 50px;
+    }
+}
